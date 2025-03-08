@@ -1,0 +1,242 @@
+.logout-link-button {
+    background-color: #F6F6F6;
+    color: #DBC9B9;
+    border: 1px solid #DBC9B9;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.admin{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.admin__inner{
+    text-align: center;
+}
+
+.admin__ttl{
+    color:#88786F;
+}
+
+.search-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-form{
+    display: flex;
+   justify-content: space-between;
+    /* align-items: center; */
+    margin:30px 0;
+   
+    width: 90%;
+}
+
+.search-form__item{
+     width: 20%; 
+}
+
+.search-form__item-input{
+    width: 100%; 
+    outline: none;
+    padding:10px 20px;
+    border:1px solid #E4E4E4;
+    background-color: #FCFBFC;
+    border-radius: 3px;
+    
+}
+
+input::placeholder{
+    color:#BFBEB8;
+}
+
+.search-form__gender{
+     width: 10%; 
+}
+
+.search-form__gender-select{
+     width: 100%; 
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    /* background-color:#FCFBFC; */
+    /* color: #BFBEB8; */
+
+}
+
+.search-form__category{
+     width: 25%; 
+   
+}
+
+.search-form__category-select{
+     width: 100%; 
+        outline: none;
+        padding: 10px 20px;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        background-color: #FCFBFC;
+        color: #BFBEB8;
+}
+
+.search-form__date{
+     width: 20%; 
+}
+
+.search-form__date-input{
+     width: 100%; 
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    background-color: #FCFBFC;
+    color: #BFBEB8;
+}
+
+.search-form__button{
+     width: 8%; 
+    
+}
+
+.search-form__submit{
+     width: 100%; 
+    padding: 10px 15px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    background-color: #8B7968;
+    color:#F4EEEE;
+    cursor: pointer;
+}
+
+.search-form__export-submit{
+    padding: 10px 15px;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        background-color: #ECE9E5;
+        color: #958C7C;
+        cursor: pointer;
+}
+
+
+
+.search-form__reset-button{
+    padding:10px 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+     background-color: #D8C6B5; 
+    color: #F4EEEE;
+    text-decoration: none;
+}
+
+.admin__option{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin__export{
+    background-color: #ECE9E5;
+    color:#958C7C;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.admin__pagination{
+    
+    text-decoration: none;
+}
+
+.admin__table{
+    width: 100%;
+}
+
+.admin__table-row{
+    width: 100%;
+    border: 1px solid #E4E4E4;
+}
+
+.admin__table-heading1{
+    background-color:#8B7968;
+    color:#FFFFFF;
+    padding: 10px 20px;
+    width:20%;
+}
+
+.admin__table-heading2{
+    background-color: #8B7968;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    width: 10%;
+}
+
+.admin__table-heading3{
+    width: 25%;
+    background-color: #8B7968;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.admin__table-heading4{
+    width: 25%;
+    background-color: #8B7968;
+    color: #FFFFFF;
+    padding: 10px 20px;
+
+}
+
+.admin__table-heading5{
+    background-color: #8B7968;
+    width: 20%;
+    padding: 10px 20px;
+}
+
+.admin__table-data1{
+    width: 20%;
+    text-align: center;
+    padding: 10px 20px;
+    color:#8B7969;
+}
+
+.admin__table-data2{
+    width: 10%;
+    text-align: center;
+    padding: 10px 20px;
+    color: #8B7969;
+}
+
+.admin__table-data3{
+    width: 25%;
+    text-align: center;
+    padding: 10px 20px;
+    color: #8B7969;
+}
+
+.admin__table-data4{
+    width: 25%;
+    text-align: center;
+    padding: 10px 20px;
+    color: #8B7969;
+}
+
+.admin__table-data5{
+    width: 20%;
+    text-align: center;
+    padding: 10px 20px;
+    color: #8B7969;
+}
+
+.admin__table-button{
+    background-color: #FCFCFC;
+    color:#D9C6B5;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    padding:5px 10px;
+}
+

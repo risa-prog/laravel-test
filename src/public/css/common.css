@@ -1,0 +1,19 @@
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    border-bottom:1px solid #DBC9B9;
+}
+
+.header__inner {
+    text-align: center;
+    width: 80%;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color:#8B7969;
+}

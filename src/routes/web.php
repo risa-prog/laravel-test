@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::middleware('auth')->get('/admin', [ContactController::class,'admin']);
+Route::post('/register',[RegisterController::class,'store']);
+Route::get('/register',[ContactController::class,'regist']);
+Route::post('/login',[LoginController::class,'store']);
+ Route::get('/',[ContactController::class,'index']);
+ Route::post('/',[ContactController::class],'store');
+Route::post('/confirm',[ContactController::class,'confirm']);
+Route::post('/thanks',[ContactController::class,'create']);
+Route::get('/search',[ContactController::class,'search']);
+Route::get('/csv-download',[ContactController::class,'downloadCsv']);
+Route::get('/search-export',[ContactController::class,'searchExport']);
+
+
+
+
+
+
+
