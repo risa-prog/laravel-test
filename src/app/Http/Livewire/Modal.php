@@ -8,7 +8,7 @@ use App\Models\Contact;
 
 class Modal extends Component
 {
-    public $showModal = false;
+    public $showModal=false;
     
     public function render()
     {

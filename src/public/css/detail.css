@@ -1,0 +1,37 @@
+.detail {
+    width: 80%;
+    margin: 200px auto; 
+    
+}
+
+.detail__table {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.detail__table-heading {
+    font-size: 16px;
+    padding: 10px 30px;
+    width: 40%;
+}
+
+.detail__table-data {
+    font-size: 16px;
+    padding: 10px 30px;
+    width: 60%;
+}
+
+.delete{
+    margin: 80px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.delete-form-submit{
+    border: none;
+    background-color: #BB360E;
+    color: #FFFFFF;
+    padding:10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}

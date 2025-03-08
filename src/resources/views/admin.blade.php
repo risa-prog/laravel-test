@@ -62,11 +62,9 @@
                     <button class="search-form__submit">検索</button>
                 </div>
             </form>
-            <form class="search-form__export" action="/search-export" method="get" form="search" id="export">
-                    <input class="search-form__export-submit" type="submit" value="エクスポート">
-            </form>
             <div class="search-form__reset">
-                <form action="">
+                <form action="/admin" method="get">
+                    @csrf
                     <button class="search-form__reset-button">リセット</button>
                 </form>
             </div>
@@ -74,6 +72,7 @@
         
         <div class="admin__option">
             <form action="/csv-download" method="get">
+                @csrf
                 <input class="admin__export" type="submit" value="エクスポート">
             </form>
            
@@ -110,16 +109,15 @@
                     </td>
 
                     <td class="admin__table-data5">
-                        <button wire:click="openModal()" type="button" class="">
-                            詳細
-                        </button>
-                        @if($showModal)
-                        <div>
-                            <button wire:click="closeModal()" type="button" class="">
-                                ×
-                            </button>
+                        <div class="admin__table-button">
+                            <form action="/find" method="post">
+                                @csrf
+                                <input type="hidden" name="id" value="{{$contact->id}}">
+                                <button class="modal-submit" type="submit">
+                                    詳細
+                                </button>
+                            </form>
                         </div>
-                         @endif
                     </td>
 
                 </tr>

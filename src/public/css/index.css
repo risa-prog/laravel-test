@@ -25,6 +25,7 @@
     padding:10px 30px;
     outline: none;
     color: #8A847F;
+    width:200px;
 }
 
 input::placeholder{
@@ -57,7 +58,7 @@ textarea::placeholder{
     border: none;
     padding: 10px 15px;
     outline: none;
-    color:#D6D4D2;
+    /* color:#D6D4D2; */
 }
 
 .contact__form-radio{
@@ -74,6 +75,8 @@ textarea::placeholder{
     border: none;
     padding: 10px 15px;
     outline: none;
+    height:100px;
+    width:300px;
     /* color: #D6D4D2; */
 }
 

@@ -62,8 +62,8 @@ input::placeholder{
     padding: 10px 20px;
     border: 1px solid #E4E4E4;
     border-radius: 3px;
-    /* background-color:#FCFBFC; */
-    /* color: #BFBEB8; */
+    background-color:#FCFBFC; 
+     color: #BFBEB8; 
 
 }
 
@@ -233,10 +233,29 @@ input::placeholder{
 }
 
 .admin__table-button{
+    display: flex;
+    align-items: center;
+}
+
+.modal-button{
+    margin-right: 10px;
+}
+
+.modal-submit{ 
     background-color: #FCFCFC;
     color:#D9C6B5;
     border: 1px solid #E4E4E4;
     border-radius: 3px;
     padding:5px 10px;
+    cursor: pointer;
+}
+
+.delete-form-submit{
+    background-color: #FCFCFC;
+    color: #D9C6B5;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 

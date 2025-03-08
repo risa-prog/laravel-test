@@ -52,7 +52,7 @@ class ContactController extends Controller
     }
 
     public function search(Request $request){
-        //  $contacts=$request->all();
+        // $contacts=$request->all();
         //  dd($contacts);
 
          $contacts=Contact::with('category')->KeywordSearch($request->keyword)->GenderSearch($request->gender)->CategorySearch($request->category_id)->DateSearch($request->created_at)->Paginate(7);
@@ -84,31 +84,16 @@ class ContactController extends Controller
 
     }
 
-    public function searchExport(Request $request){
-         $contacts=Contact::with('category')->KeywordSearch($request->keyword)->GenderSearch($request->gender)->CategorySearch($request->category_id)->DateSearch($request->created_at)->get();
-        dd($contacts);
+    public function find(Request $request){
+        $contact=Contact::find($request->id);
+       
+        return view('detail',compact('contact'));
+     }
 
-         $csvHeader = ['id', 'first_name','last_name','gender','tel','email','address','building','detail','created_at', 'updated_at'];
-        $csvData = $contacts->toArray();
+    public function delete(Request $request){
+        Contact::find($request->id)->delete();
 
-         if($contacts !== null){
-            $response = new StreamedResponse(function () use ($csvHeader, $csvData) {
-            $handle = fopen('php://output', 'w');
-            fputcsv($handle, $csvHeader);
-
-            foreach ($csvData as $row) {
-                fputcsv($handle, $row);
-            }
-
-            fclose($handle);
-        }, 200, [
-            'Content-Type' => 'text/csv',
-            'Content-Disposition' => 'attachment; filename="searchContacts.csv"',
-        ]);
-
-        return $response;
-
-         }
+        return redirect('/admin');   
     }
 
 }

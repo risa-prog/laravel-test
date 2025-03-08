@@ -26,7 +26,9 @@ Route::post('/confirm',[ContactController::class,'confirm']);
 Route::post('/thanks',[ContactController::class,'create']);
 Route::get('/search',[ContactController::class,'search']);
 Route::get('/csv-download',[ContactController::class,'downloadCsv']);
-Route::get('/search-export',[ContactController::class,'searchExport']);
+Route::post('/search-export',[ContactController::class,'searchExport']);
+Route::post('/find',[ContactController::class,'find']);
+Route::delete('/delete',[ContactController::class,'delete']);
 
 
 

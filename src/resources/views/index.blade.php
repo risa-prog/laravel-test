@@ -46,13 +46,13 @@
                 </div>
                 <div class="contact__form-item">
                     <label class="contact__form-gender">
-                        <input class="contact__form-radio" type="radio" name="gender" value="1" checked>男性
+                        <input class="contact__form-radio" type="radio" name="gender" value="1" checked @if((int)old('gender')== 1) checked @endif>男性
                     </label>
                     <label class="contact__form-gender">
-                        <input class="contact__form-radio" type="radio" name="gender" value="2">女性
+                        <input class="contact__form-radio" type="radio" name="gender" value="2" @if((int)old('gender')==2) checked @endif>女性
                     </label>
                     <label class="contact__form-gender">
-                        <input class="contact__form-radio" type="radio" name="gender" value="3">その他
+                        <input class="contact__form-radio" type="radio" name="gender" value="3" @if((int)old('gender')==3) checked @endif>その他
                     </label>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                     <select class="contact__form-select" name="category_id">
                         <option value="" disabled selected style="display:none;">選択してください</option>
                         @foreach($categories as $category)
-                        <option value="{{$category->id}}">
+                        <option value="{{$category->id}}" @if((int)old('category_id')==$category->id) selected @endif>
                             {{$category->content}}
                         </option>
                         @endforeach
