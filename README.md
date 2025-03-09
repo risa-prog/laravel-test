@@ -21,6 +21,8 @@ Laravel環境構築<br/>
 •MySQL 8.0<br/>
 
 **ER図**
-
+/Users/shintanirisa/coachtech/laravel/test/contact.drawio.png
 
 **URL**
+•開発環境：http://localhost/
+•phpMyAdmin：http://localhost:8080
