@@ -167,9 +167,8 @@
                     <span class="contact__form-required">※</span>
                 </div>
                 <div class="contact__form-item">
-                    <textarea class="contact__form-textarea" name="detail" placeholder="お問い合わせ内容をご記載ください">
-                    {{old('detail')}}
-                    </textarea>
+                    <textarea class="contact__form-textarea" name="detail" placeholder="お問い合わせ内容をご記載ください">{{old('detail')}}</textarea>
+                     
                 </div>
             </div>
             <div class="error">

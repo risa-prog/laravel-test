@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    <!-- モーダルの作成ができませんでしたので、こちらのページに遷移しております。すみません -->
     <div class="detail">
         <table class="detail__table">
             <tr class="detail__table-row">

@@ -58,7 +58,6 @@ textarea::placeholder{
     border: none;
     padding: 10px 15px;
     outline: none;
-    /* color:#D6D4D2; */
 }
 
 .contact__form-radio{
@@ -75,8 +74,12 @@ textarea::placeholder{
     border: none;
     padding: 10px 15px;
     outline: none;
-    height:100px;
+    height:100px; 
     width:300px;
+   
+}
+
+textarea:placeholder{
     /* color: #D6D4D2; */
 }
 
@@ -109,3 +112,4 @@ textarea::placeholder{
     font-size: 20px;
 
 }
+
